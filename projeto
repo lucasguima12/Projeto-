@@ -102,6 +102,7 @@ int main()
 }
 
 
+Alunos: Lucas Guimarães Cardoso, Talles Henrique De Oliveira Nadiceo, Pedro Henrique Nunes.
 
 // COMENTARIOS: Bom, utilizei na função "clone", um argumento chamado "CLONE_VFORK", que faz com que a execução do processo pai seja suspensa
 ate que a thread filha libere seus recursos de memoria virtual. Ja que as threds filhas utilizam o mesmo espaço de memoria do processo pai devido ao argumento "CLONE_VM", que cria uma "regia critica".
