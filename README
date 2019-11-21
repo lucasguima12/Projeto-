@@ -1,0 +1,4 @@
+Como executar no linux Ubunto:
+
+Utilize o nano para escrever o arquivo e salvo em .c . Depois, utilize o comando gcc -o nomedoarquivo nomedoarquivo.c para compilar. Feito isso,
+execute o arquivo pelo comando ./nomedoarquivo .
