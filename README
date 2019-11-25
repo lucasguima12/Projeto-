@@ -1,4 +1,11 @@
 Como executar no linux Ubunto:
 
-Utilize o nano para escrever o arquivo e salvo em .c . Depois, utilize o comando gcc -o nomedoarquivo nomedoarquivo.c para compilar. Feito isso,
+Utilizamos o nano para escrever o arquivo e salvo em .c . Depois, utilize o comando " gcc -o nomedoarquivo nomedoarquivo.c " para compilar. Feito isso,
 execute o arquivo pelo comando ./nomedoarquivo .
+
+
+Para executar em unix solaris:
+
+Primeiramente fizemos o download do gcc, podendo ser facilmente baixado pelo comando " pkg install gcc-45 ". Depois de instalado o gcc, posso utilizar
+o nano, para escrever o codigo em c e depois utilizar o gcc pelo comando " gcc -o nomedoarquivo nomedoarquivo.c " para compilar. Feito isso
+é so executar o arquivo pelo comando ./nomedoarquivo .
