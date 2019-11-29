@@ -3,16 +3,6 @@ Como executar no linux Ubunto:
 Utilizamos o nano para escrever o arquivo e salvo em .c . Depois, utilize o comando " gcc -o nomedoarquivo nomedoarquivo.c " para compilar. Feito isso,
 execute o arquivo pelo comando ./nomedoarquivo .
 
-
-Para executar em unix solaris:
-
-https://www.oracle.com/solaris/solaris11/downloads/solaris11-vm-templates-downloads.html
-
-Prof, crie um usuario e senha quando executar o sistema, para poder utilizar o sudo.
-Primeiramente fizemos o download do gcc, podendo ser facilmente baixado pelo comando " sudo pkg install gcc-45 ". Depois de instalado o gcc, posso utilizar
-o nano, para escrever o codigo em c e depois utilizar o gcc pelo comando " gcc -o nomedoarquivo nomedoarquivo.c " para compilar. Feito isso
-é so executar o arquivo pelo comando ./nomedoarquivo .
-
 Alunos: Lucas Guimarães Cardoso, Talles Henrique De Oliveira Nadiceo, Lucas Silveira Newlands Machado
 
 // COMENTARIOS: Bom, utilizei na função "clone", um argumento chamado "CLONE_VFORK", que faz com que a execução do processo pai seja suspensa
