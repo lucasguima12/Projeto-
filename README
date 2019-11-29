@@ -1,9 +1,13 @@
+Alunos: Lucas Guimarães Cardoso, Talles Henrique De Oliveira Nadiceo, Lucas Silveira Newlands Machado
+
+
+
+
+
 Como executar no linux Ubunto:
 
 Utilizamos o nano para escrever o arquivo e salvo em .c . Depois, utilize o comando " gcc -o nomedoarquivo nomedoarquivo.c " para compilar. Feito isso,
 execute o arquivo pelo comando ./nomedoarquivo .
-
-Alunos: Lucas Guimarães Cardoso, Talles Henrique De Oliveira Nadiceo, Lucas Silveira Newlands Machado
 
 // COMENTARIOS: Bom, utilizei na função "clone", um argumento chamado "CLONE_VFORK", que faz com que a execução do processo pai seja suspensa
 ate que a thread filha libere seus recursos de memoria virtual. Ja que as threds filhas utilizam o mesmo espaço de memoria do processo pai devido ao argumento "CLONE_VM", que cria uma "regia critica".
