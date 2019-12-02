@@ -10,14 +10,14 @@
 #define FIBER_STACK 1024*64
 
 struct c {
-        int saldo;
+        int saldo;                         // Uma struct é uma variável especial que contém diversas outras variáveis.
 };
-typedef struct c conta;
+typedef struct c conta;     // muda o nome da struct "c" para "conta"
 
-conta from, to;
-int valor;
+conta from, to;              // cria 2 variaveis para a struct: "from" e "to"
+int valor;          // variavel valor
 
-// The child thread will execute this function
+// A thread filha vai executar essa função
 int transferencia( void *arg)
 {
         if (from.saldo >= valor){ // 2
@@ -46,7 +46,7 @@ int main()
         void* stack;
         pid_t pid;
         int i;
-        // Allocate the stack
+        // Alocar memoria
         stack = malloc( FIBER_STACK );
         if ( stack == 0 )
         {
@@ -61,7 +61,7 @@ int main()
         valor = 10;
       
         for (i = 0; i < 50; i++) {
-                 //Call the clone system call to create the child thread
+                 //Chama a syscall para criar a thread criança
                  pid = clone(&transferencia, (char*) stack + FIBER_STACK, SIGCHLD | CLONE_FS | CLONE_FILES | CLONE_SIGHAND | CLONE_VM | CLONE_VFORK, 0);
                  if ( pid == -1)
                  {
@@ -93,7 +93,7 @@ int main()
 		}
 	}
 
-        // Free the stack
+        // Liberar a memoria
         free(stack);
         printf("Transferencias concluidas e memoria liberada.\n");
         printf("Conta 1 com: %d\n", from.saldo);
