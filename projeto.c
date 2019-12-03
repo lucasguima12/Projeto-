@@ -10,14 +10,14 @@
 #define FIBER_STACK 1024*64
 
 struct c {
-        int saldo;                         // Uma struct é uma variável especial que contém diversas outras variáveis.
+        int saldo;                         // Uma struct é uma variavel especial que contem diversas outras variaveis.
 };
 typedef struct c conta;     // muda o nome da struct "c" para "conta"
 
 conta from, to;              // cria 2 variaveis para a struct: "from" e "to"
 int valor;          // variavel valor
 
-// A thread filha vai executar essa função
+// A thread filha vai executar essa funcao
 int transferencia( void *arg)
 {
         if (from.saldo >= valor){ // 2
